@@ -26,7 +26,8 @@ jobs:
 
     - name: Run POSTMAN collection
       run: |
-        newman run ./ServeRest-Testes.postman_collection.json -r htmlextra --reporter-htmlextra-export ./testResults/htmlreport.html
+        newman run ./serverest-tests/ServeRest-Testes.postman_collection.json -r htmlextra --reporter-htmlextra-export ./testResults/htmlreport.html
+    
     - name: Output the run Details
       uses: actions/upload-artifact@v4
       with:
