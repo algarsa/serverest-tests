@@ -27,8 +27,4 @@ jobs:
       run: |
         newman run ./ServeRest-Testes.postman_collection.json -r cli,json --reporter-json-export
     
-    - name: Output the run Details
-      uses: actions/upload-artifact@v4
-      with:
-        name: RunReports
-        path: testResults
+    
