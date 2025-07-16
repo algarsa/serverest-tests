@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Install Node
-      uses: action/setup-node@v2
+      uses: action/setup-node@latest
       with:
         node-version: '12x'
     
