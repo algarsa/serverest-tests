@@ -27,6 +27,6 @@ jobs:
 
     - name: Run POSTMAN collection
       run: |
-        newman run ./ServeRest-Testes.postman_collection.json -r myreporter --reporter-myreporter
+        newman run ./ServeRest-Testes.postman_collection.json -r html --reporter-html-export
     
     
