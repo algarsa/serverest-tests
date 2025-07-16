@@ -10,12 +10,12 @@ jobs:
   test-api:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     
     - name: Install Node
       uses: actions/setup-node@v2
       with:
-        node-version: '16'
+        node-version: '24.3.0'
     
     - name: Install newman
       run: |
@@ -26,7 +26,7 @@ jobs:
 
     - name: Run POSTMAN collection
       run: |
-        newman run ./ServeRest-Testes.postman_collection.json -r htmlextra --reporter-htmlextra-export ./testResults/htmlreport.html
+        newman run ./ServeRest-Testes.postman_collection.json
     
     - name: Output the run Details
       uses: actions/upload-artifact@v4
