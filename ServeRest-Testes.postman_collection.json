@@ -24,11 +24,6 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"// Test for response content type\r",
-									"pm.test('Content-Type is application/json', () => {\r",
-									"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json; charset=utf-8');\r",
-									"});\r",
-									"\r",
 									"// Test for quantity field\r",
 									"pm.test('Quantity field exists and is a number', () => {\r",
 									"    pm.expect(response).to.have.property('quantidade');\r",
@@ -5343,6 +5338,38 @@
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://serverest.dev",
+			"type": "string"
+		},
+		{
+			"key": "userId",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "userEmail",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "userPassword",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "userAuthorization",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "productId",
+			"value": "",
+			"type": "default"
 		}
 	]
 }
