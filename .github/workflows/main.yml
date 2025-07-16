@@ -22,12 +22,10 @@ jobs:
         npm install -g newman
         npm install -g newman-reporter-htmlextra
         npm install -g newman-reporter-json
-    - name: Make directory for results
-      run: mkdir -p ./testResults
 
     - name: Run POSTMAN collection
       run: |
-        newman run ./ServeRest-Testes.postman_collection.json -r json --reporter-json-export
+        newman run ./ServeRest-Testes.postman_collection.json -r cli,json --reporter-json-export
     
     - name: Output the run Details
       uses: actions/upload-artifact@v4
