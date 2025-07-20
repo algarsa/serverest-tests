@@ -10,4 +10,4 @@ Para rodar os testes (que podem ser encontrados na aba Scripts) de forma automat
 
 **Executando os testes em CI**
 
-Para executar os testes em CI acesse Actions (https://github.com/algarsa/serverest-tests/actions)
+Para testes em CI acesse Actions (https://github.com/algarsa/serverest-tests/actions)
