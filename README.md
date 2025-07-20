@@ -24,7 +24,7 @@ Ou ver outros detalhes da execução dos testes
 
 <img width="1366" height="728" alt="image" src="https://github.com/user-attachments/assets/1e5c1222-53be-4d7e-8870-b64144e3d208" />
 
-
+OBS: Os testes são automaticamente executados quando há inserção de um novo arquivo ou modificação de algum arquivo existente.
 
 
 
